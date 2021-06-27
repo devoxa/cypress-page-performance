@@ -1,0 +1,6 @@
+{
+  "eslint.workingDirectories": [
+    { "directory": ".", "changeProcessCWD": true },
+    { "directory": "cypress", "changeProcessCWD": true }
+  ]
+}

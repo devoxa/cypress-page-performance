@@ -1,0 +1,39 @@
+{
+  "name": "@devoxa/cypress-page-performance",
+  "description": "Save page performance metrics to disk during Cypress runs",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/devoxa/cypress-page-performance"
+  },
+  "scripts": {
+    "test": "cypress run --quiet && node integration-test.js",
+    "format": "prettier --ignore-path='.prettierignore' --list-different --write .",
+    "format:check": "prettier --ignore-path='.prettierignore' --check .",
+    "lint": "eslint --ignore-path='.prettierignore' '{src,tests}/**/*.ts'",
+    "build": "rm -rf dist/ && tsc && cp ./dist/plugin.d.ts ./dist/command.d.ts .",
+    "preversion": "yarn build"
+  },
+  "eslintConfig": {
+    "extends": "@devoxa"
+  },
+  "prettier": "@devoxa/prettier-config",
+  "dependencies": {
+    "flocky": "^0.2.7"
+  },
+  "peerDependencies": {
+    "cypress": "^6.8.0"
+  },
+  "devDependencies": {
+    "@devoxa/eslint-config": "^2.0.5",
+    "@devoxa/prettier-config": "^1.0.0",
+    "@types/node": "^15.12.4",
+    "cypress": "^6.8.0",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5",
+    "typescript": "^4.1.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

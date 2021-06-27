@@ -1,0 +1,45 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test-and-build:
+    name: 'Test & build'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 'Checkout the repository'
+        uses: actions/checkout@v2
+
+      - name: 'Setup Node.JS'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: 'Cache dependencies'
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+            ~/.cache/Cypress
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: 'Install dependencies'
+        run: yarn install --frozen-lockfile
+
+      - name: 'Check code formatting'
+        run: yarn format:check
+
+      - name: 'Run linter'
+        run: yarn lint
+
+      - name: 'Build package'
+        run: yarn build
+
+      - name: 'Run tests'
+        run: yarn test
