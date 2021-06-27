@@ -1,7 +1,7 @@
 {
   "name": "@devoxa/cypress-page-performance",
   "description": "Save page performance metrics to disk during Cypress runs",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/devoxa/cypress-page-performance"
