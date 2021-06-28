@@ -22,13 +22,13 @@
     "flocky": "0.2.7"
   },
   "peerDependencies": {
-    "cypress": "^6.8.0"
+    "cypress": "^6.8.0 || ^7.0.0"
   },
   "devDependencies": {
     "@devoxa/eslint-config": "2.0.5",
     "@devoxa/prettier-config": "1.0.0",
     "@types/node": "15.12.4",
-    "cypress": "6.9.1",
+    "cypress": "7.6.0",
     "eslint": "7.29.0",
     "prettier": "2.3.2",
     "typescript": "4.3.4"
