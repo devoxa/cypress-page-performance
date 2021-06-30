@@ -6,6 +6,9 @@
   "repository": {
     "url": "https://github.com/devoxa/cypress-page-performance"
   },
+  "bin": {
+    "format-page-performance-metrics-as-gfm": "./dist/format-as-gfm.js"
+  },
   "scripts": {
     "test": "cypress run --quiet && node integration-test.js",
     "format": "prettier --ignore-path='.prettierignore' --list-different --write .",
@@ -19,7 +22,8 @@
   },
   "prettier": "@devoxa/prettier-config",
   "dependencies": {
-    "flocky": "0.2.7"
+    "flocky": "0.2.7",
+    "yargs": "^17.0.1"
   },
   "peerDependencies": {
     "cypress": "^6.8.0 || ^7.0.0"
@@ -28,6 +32,7 @@
     "@devoxa/eslint-config": "2.0.5",
     "@devoxa/prettier-config": "1.0.0",
     "@types/node": "15.12.4",
+    "@types/yargs": "^17.0.0",
     "cypress": "7.6.0",
     "eslint": "7.29.0",
     "prettier": "2.3.2",

@@ -40,6 +40,13 @@ interface PerformanceEntry {
   duration?: number
 }
 
+export interface PagePerformanceMetric {
+  label: string
+  transferSize: number
+  resourceLoadFinish: number
+  nextjsHydrationFinish?: number
+}
+
 function savePagePerformanceMetrics(options: SavePagePerformanceMetricsOptions) {
   const { fileName, label, performanceEntries } = options
 
@@ -55,7 +62,7 @@ function savePagePerformanceMetrics(options: SavePagePerformanceMetricsOptions) 
   const pagePerformanceMetrics = { label, transferSize, resourceLoadFinish, nextjsHydrationFinish }
 
   // Push the page performance metrics into the existing array of metrics
-  let existing = []
+  let existing: Array<PagePerformanceMetric> = []
   if (fs.existsSync(fileName)) {
     existing = JSON.parse(fs.readFileSync(fileName, 'utf-8'))
   }

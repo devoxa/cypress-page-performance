@@ -29,6 +29,7 @@
 <p align="center">
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
+  <a href="#additional-helpers">Additional helpers</a> •
   <a href="#contributors">Contributors</a> •
   <a href="#license">License</a>
 </p>
@@ -94,6 +95,15 @@ in the root directory.
     "nextjsHydrationFinish": 137.64
   }
 ]
+```
+
+## Additional helpers
+
+The package also includes an additional helper that formats the output JSON as a markdown table
+using Github flavoured markdown, encoded for use in Github actions.
+
+```sh
+./node_modules/.bin/format-page-performance-metrics-as-gfm
 ```
 
 ## Contributors
