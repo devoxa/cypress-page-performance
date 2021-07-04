@@ -1067,10 +1067,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.0.tgz#a5d06b4a8b01e3a63771daa5cb7a1903e2e57067"
   integrity sha512-tW+UkmtNg/jv9CSofAKvgVcO7c2URjhTdW1ZTkcAritblu8tajiYy7YisnIflEwtKssCtOxpnBRoCB7iap0/TA==
 
-flocky@0.2.7:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/flocky/-/flocky-0.2.7.tgz#7c618464837ec5ce752f776f9058fa053674706b"
-  integrity sha512-8VZF1NxQS6HEH3avCXUDXd/8cvq897mFttN2Cu9Q+sOziwsI4/V6cdOjgTWs3Rc68hs8bS4CO7t6Ylv6cs+rnA==
+flocky@0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/flocky/-/flocky-0.2.8.tgz#3a00667b56e5f8bb5f2e0be86a9753a016656880"
+  integrity sha512-VN/YRJr+UB6CIbh6jHFgqWS3PadmCiXAr4NS/RjEmFIMQll58+W59diPhc1qKHdepm3b+TpSOFhqWHIWPz3XAA==
 
 forever-agent@~0.6.1:
   version "0.6.1"
