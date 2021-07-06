@@ -1,5 +1,5 @@
+import { compact, max, roundTo, sum } from '@devoxa/flocky'
 import fs from 'fs'
-import { compact, max, sum, roundTo } from 'flocky'
 
 interface SavePagePerformanceMetricsPluginOptions {
   fileName?: string

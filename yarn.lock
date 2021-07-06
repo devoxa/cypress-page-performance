@@ -67,6 +67,11 @@
     eslint-config-prettier "^8.1.0"
     eslint-plugin-react "^7.21.2"
 
+"@devoxa/flocky@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@devoxa/flocky/-/flocky-1.1.0.tgz#d2e7a844e5ef63361cb14aae7d6f6589cfabdd76"
+  integrity sha512-oLjmdOer1/7XJSA1Nkhauz5swd0cmYaWblu2E+LkW2YlDsh1HgzaAlYse306yO4EsiR5LCiQmc6s5vZZ1poH8g==
+
 "@devoxa/prettier-config@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@devoxa/prettier-config/-/prettier-config-1.0.0.tgz#732a8d78f603d9802751a408914404494812f227"
@@ -1051,11 +1056,6 @@ flatted@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.0.tgz#a5d06b4a8b01e3a63771daa5cb7a1903e2e57067"
   integrity sha512-tW+UkmtNg/jv9CSofAKvgVcO7c2URjhTdW1ZTkcAritblu8tajiYy7YisnIflEwtKssCtOxpnBRoCB7iap0/TA==
-
-flocky@0.2.7:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/flocky/-/flocky-0.2.7.tgz#7c618464837ec5ce752f776f9058fa053674706b"
-  integrity sha512-8VZF1NxQS6HEH3avCXUDXd/8cvq897mFttN2Cu9Q+sOziwsI4/V6cdOjgTWs3Rc68hs8bS4CO7t6Ylv6cs+rnA==
 
 forever-agent@~0.6.1:
   version "0.6.1"

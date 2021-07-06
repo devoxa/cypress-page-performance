@@ -22,7 +22,7 @@
   },
   "prettier": "@devoxa/prettier-config",
   "dependencies": {
-    "flocky": "0.2.7",
+    "@devoxa/flocky": "^1.1.0",
     "yargs": "^17.0.1"
   },
   "peerDependencies": {
