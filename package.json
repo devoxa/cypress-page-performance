@@ -33,7 +33,7 @@
     "@devoxa/prettier-config": "1.0.0",
     "@types/node": "16.0.0",
     "@types/yargs": "17.0.2",
-    "cypress": "8.0.0",
+    "cypress": "8.1.0",
     "eslint": "7.31.0",
     "prettier": "2.3.2",
     "typescript": "4.3.5"
