@@ -1,5 +1,7 @@
 # Compiled Output
 dist/
+command.d.ts
+plugin.d.ts
 
 # Tests
 page-performance-metrics.json
