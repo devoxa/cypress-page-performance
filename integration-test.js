@@ -9,11 +9,11 @@ if (pagePerformanceMetric.label !== 'Google') {
 }
 
 if (
-  typeof pagePerformanceMetric.transferSize !== 'number' ||
-  pagePerformanceMetric.transferSize < 32000 ||
-  pagePerformanceMetric.transferSize > 1000000
+  typeof pagePerformanceMetric.encodedBodySize !== 'number' ||
+  pagePerformanceMetric.encodedBodySize < 32000 ||
+  pagePerformanceMetric.encodedBodySize > 1000000
 ) {
-  console.log('transferSize does not match expected')
+  console.log('encodedBodySize does not match expected')
   process.exit(1)
 }
 

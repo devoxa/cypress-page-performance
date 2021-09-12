@@ -32,7 +32,7 @@ function run(fileName: string) {
   for (const line of pagePerformanceMetrics) {
     const columns = [
       line.label,
-      asKb(line.transferSize),
+      asKb(line.encodedBodySize),
       asMs(line.resourceLoadFinish),
       asMs(line.nextjsHydrationFinish),
     ]
@@ -48,8 +48,12 @@ function asKb(value: number) {
 
   value = Math.round(value / 10) / 100
 
-  if (value < 300) {
+  if (value < 225) {
     return `🟩 ${value.toFixed(2)} kB`
+  }
+
+  if (value < 250) {
+    return `🟨 ${value.toFixed(2)} kB`
   }
 
   return `🟥 ${value.toFixed(2)} kB`
@@ -62,6 +66,10 @@ function asMs(value: number | undefined) {
 
   if (value < 1000) {
     return `🟩 ${value} ms`
+  }
+
+  if (value < 2000) {
+    return `🟨 ${value} ms`
   }
 
   return `🟥 ${value} ms`

@@ -90,7 +90,7 @@ in the root directory.
 [
   {
     "label": "SignInPage",
-    "transferSize": 205048,
+    "encodedBodySize": 205048,
     "resourceLoadFinish": 156.32,
     "nextjsHydrationFinish": 137.64
   }

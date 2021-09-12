@@ -34,7 +34,7 @@ interface SavePagePerformanceMetricsOptions {
 
 interface PerformanceEntry {
   name: string
-  transferSize?: number
+  encodedBodySize?: number
   responseEnd?: number
   startTime?: number
   duration?: number
@@ -42,7 +42,7 @@ interface PerformanceEntry {
 
 export interface PagePerformanceMetric {
   label: string
-  transferSize: number
+  encodedBodySize: number
   resourceLoadFinish: number
   nextjsHydrationFinish?: number
 }
@@ -50,7 +50,7 @@ export interface PagePerformanceMetric {
 function savePagePerformanceMetrics(options: SavePagePerformanceMetricsOptions) {
   const { fileName, label, performanceEntries } = options
 
-  const transferSize = sum(compact(performanceEntries.map((x) => x.transferSize)))
+  const encodedBodySize = sum(compact(performanceEntries.map((x) => x.encodedBodySize)))
   const resourceLoadFinish = roundTo(max(compact(performanceEntries.map((x) => x.responseEnd))), 2)
 
   const nextjsHydrationEntry = performanceEntries.find((x) => x.name === 'Next.js-hydration')
@@ -59,7 +59,12 @@ function savePagePerformanceMetrics(options: SavePagePerformanceMetricsOptions) 
       ? roundTo(nextjsHydrationEntry.startTime + nextjsHydrationEntry.duration, 2)
       : undefined
 
-  const pagePerformanceMetrics = { label, transferSize, resourceLoadFinish, nextjsHydrationFinish }
+  const pagePerformanceMetrics = {
+    label,
+    encodedBodySize,
+    resourceLoadFinish,
+    nextjsHydrationFinish,
+  }
 
   // Push the page performance metrics into the existing array of metrics
   let existing: Array<PagePerformanceMetric> = []
