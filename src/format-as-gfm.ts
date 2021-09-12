@@ -25,8 +25,8 @@ function run(fileName: string) {
   pagePerformanceMetrics.sort((a, b) => a.label.localeCompare(b.label))
 
   const rows = [
-    '| Page | Transfer size | Resource load time | Next.js hydration time |',
-    '| ---- | ------------- | ------------------ | ---------------------- |',
+    '| Page | Body size | Resource load time | Next.js hydration time |',
+    '| ---- | --------- | ------------------ | ---------------------- |',
   ]
 
   for (const line of pagePerformanceMetrics) {
