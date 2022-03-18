@@ -32,7 +32,7 @@
     "@devoxa/eslint-config": "3.0.1",
     "@devoxa/prettier-config": "1.0.2",
     "@types/node": "16.11.26",
-    "@types/yargs": "17.0.9",
+    "@types/yargs": "17.0.10",
     "cypress": "9.5.2",
     "eslint": "8.11.0",
     "prettier": "2.6.0",
