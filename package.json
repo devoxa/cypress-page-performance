@@ -31,7 +31,7 @@
   "devDependencies": {
     "@devoxa/eslint-config": "3.0.1",
     "@devoxa/prettier-config": "1.0.2",
-    "@types/node": "18.11.16",
+    "@types/node": "18.11.17",
     "@types/yargs": "17.0.17",
     "cypress": "9.7.0",
     "eslint": "8.30.0",
