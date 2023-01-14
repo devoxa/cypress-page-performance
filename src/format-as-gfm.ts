@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import fs from 'fs'
 import path from 'path'
-import yargs from 'yargs/yargs'
 import { hideBin } from 'yargs/helpers'
+import yargs from 'yargs/yargs'
 import { PagePerformanceMetric } from './plugin'
 
 const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'), 'utf-8'))
